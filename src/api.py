@@ -19,7 +19,6 @@ async def generate_images(request: Request, image: Image = Depends(Image.as_form
     try:
         await download_images()
         resized_images = await resize_images(image.height, await get_local_images())
-        print(resized_images)
         await save_local_images(resized_images)
         await upload_images(image)
         await remove_local_images()
