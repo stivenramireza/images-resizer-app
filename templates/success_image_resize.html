@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stivenramireza - Ajustar imágenes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">stivenramireza</a>
+    </nav>
+    <div class="container-image-resize">
+        <div class="card card-image-resize">
+            <img src="https://1mhowto.com/wp-content/uploads/2014/12/app-resizeme-512.png" class="card-img-top" alt="resizer-image">
+            <div class="card-body">
+                <p class="card-text">El cambio de tamaño de las imágenes ha sido exitoso.</p>
+                <button type="button" class="btn btn-success" onclick="window.location='/'">
+                    Regresar al inicio
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .container-image-resize {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-image-resize {
+        width: 18rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>

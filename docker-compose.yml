@@ -1,0 +1,7 @@
+
+version: '3'
+services:
+  images-resizer-app:
+    build: images-resizer-app:latest
+    ports:
+      - "8000:8000"

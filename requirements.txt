@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+pydantic
+pillow
+python-dotenv
+requests
+python-multipart
+pytest
+asyncio
+aioboto3
+nest_asyncio

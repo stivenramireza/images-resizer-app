@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stivenramireza - Ajustar imágenes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">stivenramireza</a>
+    </nav>
+    <div class="container-image-resize">
+        <div class="card card-image-resize">
+            <img src="https://1mhowto.com/wp-content/uploads/2014/12/app-resizeme-512.png" class="card-img-top" alt="resizer-image">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Ajustar imágenes</strong></h5>
+                <p class="card-text">Ingresa el alto para generar las imágenes que tiene stivenramireza.</p>
+                <form action = "/generate" method = "post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="height" class="form-image-resize"><strong>Alto</strong></label>
+                        <div class="input-image-resize">
+                            <input type="number" class="form-control mr-2" name="height" aria-describedby="heightHelp" min="0" max="2000">
+                            <small id="heightHelp" class="form-text text-image-resize"><strong>px</strong></small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-info w-100 mt-10">
+                            Generar imágenes
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .container-image-resize {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-image-resize {
+        width: 18rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .input-image-resize {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-image-resize {
+        font-family: 'Helvetica';
+        font-size: 16px;
+    }
+
+    .form-image-resize {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+        -webkit-appearance: none;
+    }
+</style>
